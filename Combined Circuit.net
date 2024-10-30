@@ -1,0 +1,43 @@
+* H:\Documents\Updated Skripise\IJK\Combined Circuit.asc
+Q1 N005 N013 N011 0 BC847B
+R1 N013 0 2.2k
+R2 N007 N013 4.3k
+R3 N007 N006 1
+R4 0 N014 56
+R5 N009 N010 0.3
+R6 Vout 0 270
+C1 N013 0 5.6n
+C2 Vout N005 20n
+C3 N009 Vin 22n
+L1 N011 N010 {L1}
+L2 N006 N005 {L2}
+V1 N007 0 6
+V2 N015 0 0 AC 2
+L3 N011 N014 560µ
+R7 N003 N015 50
+R8 N003 N008 50
+L4 N008 0 80µ
+C4 N004 N003 31.84n
+R9 N004 N008 50
+R10 Vin N004 50
+R11 N004 0 50
+C5 N001 Vout 1n
+C6 Vout N012 983.58p
+L5 Vout N001 6.44µ
+C7 N002 N001 1n
+L6 N001 N002 6.44µ
+C8 N001 N012 3183p
+C9 N002 N012 983.58p
+Ro N002 0 50
+R12 Vout 0 50
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\24696889\AppData\Local\LTspice\lib\cmp\standard.bjt
+;.op
+.ac dec 101 10k 100Meg
+k23 L1 L2 0.95
+.param L1=56u
+.param L2=NR*L1
+.param NR=16
+.backanno
+.end
