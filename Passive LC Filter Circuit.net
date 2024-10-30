@@ -1,0 +1,14 @@
+* H:\Documents\Updated Skripise\IJK\Passive LC Filter Circuit.asc
+C1 N001 0 983.58p
+L1 N001 N002 6.44µ
+C2 N002 0 3183p
+L2 N002 N003 6.44µ
+C3 N003 0 983.58p
+Cs N002 N001 1n
+Cv N003 N002 1n
+R1 N001 N004 50
+V1 N004 0 AC 2 0
+R2 N003 0 50
+.ac dec 101 10k 10Meg
+.backanno
+.end
